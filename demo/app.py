@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 30 14:10:49 2021
-
-@author: t-congmu
-"""
-
-
-
-
 from transformers import pipeline
 from transformers import XLMProphetNetTokenizer, XLMProphetNetForConditionalGeneration
 import dash
@@ -16,8 +6,9 @@ from dash.dependencies import Input, Output
 
 
 # checkpoint = 'microsoft/xprophetnet-large-wiki100-cased'
-# checkpoint = '/Users/congmu/Documents/Project/wd/base/checkpoint-300000'
-checkpoint = '/Users/congmu/Documents/Project/wd/klue_mrc/ProphetNet-Ko_Base/checkpoint-182'
+# checkpoint = './base/checkpoint-50000'
+# checkpoint = './large/checkpoint-50000'
+checkpoint = './qg/ProphetNet-Ko_Base/checkpoint-314'
 model = XLMProphetNetForConditionalGeneration.from_pretrained(checkpoint)
 tokenizer = XLMProphetNetTokenizer.from_pretrained(checkpoint)
 
