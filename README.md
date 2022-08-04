@@ -75,6 +75,15 @@ For our running example, the specification is summarized as follows (one can als
 5. **Fine-tune the model** ([script](./script/prepare_finetune_data.py) for preparing fine-tune data and [script](./script/prophetnet-ko_finetune.py) for fine-tuning)**.** As our downstream task is question generation (answer-agnostic), we consider [KLUE-MRC](https://klue-benchmark.com/tasks/72/overview/description) and [KorQuAD v1.0](https://huggingface.co/datasets/squad_kor_v1) as potential datasets for fine-tuning. We use [BLEU](https://en.wikipedia.org/wiki/BLEU) scores as evaluation metrics.
 
 
+## Reference
+
+[1] Tutorials and examples from [Hugging Face](https://huggingface.co/).
+
+[2] [Example](http://ethen8181.github.io/machine-learning/deep_learning/seq2seq/huggingface_torch_transformer.html) of pre-training with Hugging Face.
+
+[3] [Example](https://huggingface.co/ThomasSimonini/t5-end2end-question-generation) of fine-tuning with Hugging Face for question generation (answer-agnostic).
+
+
 ## Contributing
 
 
